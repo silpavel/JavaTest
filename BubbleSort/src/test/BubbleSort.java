@@ -4,7 +4,7 @@ import java.util.Random;
 //find min from n members, then find min  from n-1  etc
 public class BubbleSort {
 	public static void main(String arg[]) {
-		int size=1;
+		int size=20;
 	    int arr[]=new int[size];
 	    Random rnd=new Random();
 	    for(int i=0; i<size; i++)
@@ -15,9 +15,9 @@ public class BubbleSort {
 
 	    P.p();//cout<<endl;
 	    bubbleSort(arr);
-	    for(int i=0; i<size; i++)
+	    for(int value:arr)//foreach
 	    {
-	    	P.p(arr[i]+"  ");//cout<<arr[i]<<" ";
+	    	P.p(value+"  ");//cout<<arr[i]<<" ";
 	    }
 	    P.p();//cout<<endl;
 	}
